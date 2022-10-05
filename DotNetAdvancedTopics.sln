@@ -37,21 +37,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetIdentity", "DotNetIdentity\DotNetIdentity.csproj", "{15E746E2-123D-43A9-9CCB-B75EF7DDBD1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManagement", "ConfigurationManagement\ConfigurationManagement.csproj", "{4C52CEB8-622F-4303-AB01-984C9AD96F0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationManagement", "ConfigurationManagement\ConfigurationManagement.csproj", "{4C52CEB8-622F-4303-AB01-984C9AD96F0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageManagement", "PackageManagement\PackageManagement.csproj", "{A3F56B56-B12B-492F-96DA-BD1E80992D4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackageManagement", "PackageManagement\PackageManagement.csproj", "{A3F56B56-B12B-492F-96DA-BD1E80992D4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCLICommands", "DotNetCLICommands\DotNetCLICommands.csproj", "{1BB940D8-75CD-41B8-864D-ACD0AD6C8FE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCLICommands", "DotNetCLICommands\DotNetCLICommands.csproj", "{1BB940D8-75CD-41B8-864D-ACD0AD6C8FE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApplicationPattern", "MVCApplicationPattern\MVCApplicationPattern.csproj", "{FF4E158E-044D-4AC4-8731-CD0CA9DA512D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCApplicationPattern", "MVCApplicationPattern\MVCApplicationPattern.csproj", "{FF4E158E-044D-4AC4-8731-CD0CA9DA512D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLServices", "GraphQLServices\GraphQLServices.csproj", "{2FA02E9C-E804-4465-93F5-7B108D5D7BFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLServices", "GraphQLServices\GraphQLServices.csproj", "{2FA02E9C-E804-4465-93F5-7B108D5D7BFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestfulServices", "RestfulServices\RestfulServices.csproj", "{94E33FDD-6FF2-48E4-B7A0-63C9CAA8548F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestfulServices", "RestfulServices\RestfulServices.csproj", "{94E33FDD-6FF2-48E4-B7A0-63C9CAA8548F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcServices", "GrpcServices\GrpcServices.csproj", "{5F628D03-9F0E-4734-8F4B-C37609AFB5FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcServices", "GrpcServices\GrpcServices.csproj", "{5F628D03-9F0E-4734-8F4B-C37609AFB5FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{7EFB5CB3-19E3-47B6-9939-0786C15F85CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTesting", "xUnitTesting\xUnitTesting.csproj", "{C7AA2D62-7F40-4E3C-AA25-91AD26B0D966}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,10 +155,10 @@ Global
 		{5F628D03-9F0E-4734-8F4B-C37609AFB5FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F628D03-9F0E-4734-8F4B-C37609AFB5FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F628D03-9F0E-4734-8F4B-C37609AFB5FE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7EFB5CB3-19E3-47B6-9939-0786C15F85CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7EFB5CB3-19E3-47B6-9939-0786C15F85CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7EFB5CB3-19E3-47B6-9939-0786C15F85CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7EFB5CB3-19E3-47B6-9939-0786C15F85CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7AA2D62-7F40-4E3C-AA25-91AD26B0D966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AA2D62-7F40-4E3C-AA25-91AD26B0D966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AA2D62-7F40-4E3C-AA25-91AD26B0D966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AA2D62-7F40-4E3C-AA25-91AD26B0D966}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
