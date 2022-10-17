@@ -12,4 +12,12 @@ message User {
 	string username = 4;
 	string email = 5;
 	string stringdateOfBirth = 7;
+	Address address = 8;
+
+	message Address {
+		int32 id = 1;
+		string country = 2;
+		string state = 3;
+		string city = 4;
+	}
 }
