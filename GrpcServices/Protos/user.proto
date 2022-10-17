@@ -1,1 +1,15 @@
-﻿
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcServices";
+
+package user;
+
+message User {
+	int32 id = 1;
+	int32 age = 6;
+	string name = 2;
+	string surname = 3;
+	string username = 4;
+	string email = 5;
+	string stringdateOfBirth = 7;
+}
