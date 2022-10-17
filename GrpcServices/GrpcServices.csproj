@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\user.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
