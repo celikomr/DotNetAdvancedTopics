@@ -1,12 +1,14 @@
 ﻿syntax = "proto3";
 
+import "google/protobuf/empty.proto";
+
 option csharp_namespace = "GrpcServices";
 
 package user;
 
 service User {
   // Sends users
-  rpc GetUsers () returns (UserResponse);
+  rpc GetUsers (google.protobuf.Empty) returns (UserResponse);
   rpc GetUserById (UserRequest) returns (UserResponse);
 }
 
