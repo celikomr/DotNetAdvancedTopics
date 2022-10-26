@@ -25,4 +25,13 @@ public class SampleService : Sample.SampleBase
             await Task.Delay(TimeSpan.FromSeconds(1));
         }
     }
+
+    public override async Task<SampleResponse> StreamingFromClient(IAsyncStreamReader<SampleRequest> requestStream, ServerCallContext context)
+    {
+        await foreach (var message in requestStream.ReadAllAsync())
+        {
+            Console.WriteLine(message);
+        }
+        return new SampleResponse();
+    }
 }
