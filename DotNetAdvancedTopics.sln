@@ -52,12 +52,15 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xUnitTesting", "xUnitTesting\xUnitTesting.csproj", "{C7AA2D62-7F40-4E3C-AA25-91AD26B0D966}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GrpcServices", "GrpcServices", "{7B9C87B9-6FAE-4DBE-8048-FADAAD3C844B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\New folder (2)\README.md = ..\..\New folder (2)\README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "GrpcServices\Server\Server.csproj", "{DB7A0D52-9C4A-49D3-8771-6218279F5DC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "GrpcServices\Server\Server.csproj", "{DB7A0D52-9C4A-49D3-8771-6218279F5DC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "GrpcServices\Client\Client.csproj", "{4BFB02A2-17A5-4842-B83C-409F745F43C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "GrpcServices\Client\Client.csproj", "{4BFB02A2-17A5-4842-B83C-409F745F43C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Protos", "GrpcServices\Protos\Protos.csproj", "{5F14A219-C829-4837-B6AC-4A1A34C10BD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Protos", "GrpcServices\Protos\Protos.csproj", "{5F14A219-C829-4837-B6AC-4A1A34C10BD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
