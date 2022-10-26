@@ -4,22 +4,26 @@ option csharp_namespace = "GrpcServices";
 
 package sample;
 
-service ExampleService {
+service Sample {
   // Unary
-  rpc UnaryCall (ExampleRequest) returns (ExampleResponse);
+  rpc UnaryCall (SampleRequest) returns (SampleResponse);
 
   // Server streaming
-  rpc StreamingFromServer (ExampleRequest) returns (stream ExampleResponse);
+  rpc StreamingFromServer (SampleRequest) returns (stream SampleResponse);
 
   // Client streaming
-  rpc StreamingFromClient (stream ExampleRequest) returns (ExampleResponse);
+  rpc StreamingFromClient (stream SampleRequest) returns (SampleResponse);
 
   // Bi-directional streaming
-  rpc StreamingBothWays (stream ExampleRequest) returns (stream ExampleResponse);
+  rpc StreamingBothWays (stream SampleRequest) returns (stream SampleResponse);
 }
 
-message ExampleRequest {
+message SampleRequest {
     int32 pageIndex = 1;
     int32 pageSize = 2;
     bool isDescending = 3;
+}
+
+message SampleResponse {
+    int32 index = 1
 }
