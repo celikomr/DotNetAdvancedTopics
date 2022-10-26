@@ -34,10 +34,10 @@ public class SampleService : Sample.SampleBase
     public override async Task StreamingBothWays(IAsyncStreamReader<SampleRequest> requestStream,
         IServerStreamWriter<SampleResponse> responseStream, ServerCallContext context)
     {
-        await foreach (var message in requestStream.ReadAllAsync())
+        await foreach (SampleRequest node in requestStream.ReadAllAsync())
         {
-            Console.WriteLine(message);
-            await responseStream.WriteAsync(new SampleResponse());
+            Console.WriteLine(node.Index);
+            await responseStream.WriteAsync(new SampleResponse() { Message = $"send from server: {node.Index}" });
         }
     }
 }
