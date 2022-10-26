@@ -25,5 +25,5 @@ message SampleRequest {
 }
 
 message SampleResponse {
-    int32 index = 1
+    int32 index = 1;
 }
