@@ -57,6 +57,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "GrpcServices\Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "GrpcServices\Client\Client.csproj", "{4BFB02A2-17A5-4842-B83C-409F745F43C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{5175A279-31C3-4FC0-B605-110D99CD2429}"
+	ProjectSection(SolutionItems) = preProject
+		sample.proto = sample.proto
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -174,6 +179,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DB7A0D52-9C4A-49D3-8771-6218279F5DC6} = {7B9C87B9-6FAE-4DBE-8048-FADAAD3C844B}
 		{4BFB02A2-17A5-4842-B83C-409F745F43C1} = {7B9C87B9-6FAE-4DBE-8048-FADAAD3C844B}
+		{5175A279-31C3-4FC0-B605-110D99CD2429} = {7B9C87B9-6FAE-4DBE-8048-FADAAD3C844B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B4CB449-AA67-42DB-8990-5077AEA08119}
