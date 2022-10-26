@@ -16,12 +16,23 @@ var client = new Sample.SampleClient(channel);
 //}
 
 
-var reply = client.StreamingFromClient();
+//var reply = client.StreamingFromClient();
+//for (int i = 0; i < 5; i++)
+//{
+//    await reply.RequestStream.WriteAsync(new SampleRequest() { Index = i });
+//}
+//await reply.RequestStream.CompleteAsync();
+
+var reply = client.StreamingBothWays();
 for (int i = 0; i < 5; i++)
 {
     await reply.RequestStream.WriteAsync(new SampleRequest() { Index = i });
+    Console.WriteLine(i);
 }
-await reply.RequestStream.CompleteAsync();
+while (await reply.ResponseStream.MoveNext())
+{
+    Console.WriteLine("Response: " + reply.ResponseStream.Current);
+}
 
 Console.WriteLine("Shutting down");
 Console.WriteLine("Press any key to exit...");
