@@ -1,3 +1,5 @@
+using Grpc.Core;
+
 namespace GrpcServices.Services;
 
 public class GreeterService : Greeter.GreeterBase

@@ -1,4 +1,6 @@
-﻿namespace GrpcServices.Services;
+﻿using Grpc.Core;
+
+namespace GrpcServices.Services;
 
 public class SampleService : Sample.SampleBase
 {
@@ -33,5 +35,14 @@ public class SampleService : Sample.SampleBase
             Console.WriteLine(message);
         }
         return new SampleResponse();
+    }
+
+    public override async Task StreamingBothWays(IAsyncStreamReader<SampleRequest> requestStream, 
+        IServerStreamWriter<SampleResponse> responseStream, ServerCallContext context)
+    {
+        await foreach (var message in requestStream.ReadAllAsync())
+        {
+            await responseStream.WriteAsync(new SampleResponse());
+        }
     }
 }
