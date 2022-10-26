@@ -6,15 +6,17 @@ public class SampleService : Sample.SampleBase
 {
     public override Task<SampleResponse> UnaryCall(SampleRequest request, ServerCallContext context)
     {
-        var response = new SampleResponse() { Index = 1 };
+        Console.WriteLine(request.Message);
+        var response = new SampleResponse() { Index = request.Index, Message = $"Message: '{request.Message}' received successfully" };
         return Task.FromResult(response);
     }
 
     public override async Task StreamingFromServer(SampleRequest request, IServerStreamWriter<SampleResponse> responseStream, ServerCallContext context)
     {
-        for (var i = 0; i < 5; i++)
+        for (var i = 0; i < request.Index; i++)
         {
-            await responseStream.WriteAsync(new SampleResponse());
+            Console.WriteLine(i);
+            await responseStream.WriteAsync(new SampleResponse() { Index = i });
             await Task.Delay(TimeSpan.FromSeconds(1));
         }
     }
@@ -33,6 +35,7 @@ public class SampleService : Sample.SampleBase
     {
         await foreach (var message in requestStream.ReadAllAsync())
         {
+            Console.WriteLine(message);
             await responseStream.WriteAsync(new SampleResponse());
         }
     }

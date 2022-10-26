@@ -19,11 +19,11 @@ service Sample {
 }
 
 message SampleRequest {
-    int32 pageIndex = 1;
-    int32 pageSize = 2;
-    bool isDescending = 3;
+    int32 index = 1;
+    string message = 2;
 }
 
 message SampleResponse {
     int32 index = 1;
+    string message = 2;
 }
