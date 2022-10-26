@@ -52,9 +52,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xUnitTesting", "xUnitTesting\xUnitTesting.csproj", "{C7AA2D62-7F40-4E3C-AA25-91AD26B0D966}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GrpcServices", "GrpcServices", "{7B9C87B9-6FAE-4DBE-8048-FADAAD3C844B}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\New folder (2)\README.md = ..\..\New folder (2)\README.md
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "GrpcServices\Server\Server.csproj", "{DB7A0D52-9C4A-49D3-8771-6218279F5DC6}"
 EndProject
