@@ -4,6 +4,8 @@ namespace InMemoryCaching;
 
 public class MemoryCacheManager : IMemoryCacheManager
 {
+    private readonly IMemoryCache _cache;
+
     public void Clear()
     {
         throw new NotImplementedException();
@@ -16,12 +18,17 @@ public class MemoryCacheManager : IMemoryCacheManager
 
     public void Dispose()
     {
-        throw new NotImplementedException();
+        _cache.Dispose();
     }
 
     public T Get<T>(string key)
     {
-        throw new NotImplementedException();
+        if (_cache.TryGetValue(key, out T value))
+        {
+            return value;
+        }
+
+        return default;
     }
 
     public IEnumerable<T> GetAll<T>()
