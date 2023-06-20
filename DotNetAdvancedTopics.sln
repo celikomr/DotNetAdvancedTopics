@@ -53,7 +53,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "GrpcServices\Clie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Protos", "GrpcServices\Protos\Protos.csproj", "{5F14A219-C829-4837-B6AC-4A1A34C10BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemoryCaching", "InMemoryCaching\InMemoryCaching.csproj", "{4796BFE6-43B6-46C5-8148-EC414F5632A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caching", "Caching\Caching.csproj", "{CEA824F5-33EF-4D15-A63E-6278DD298BF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,10 +157,10 @@ Global
 		{5F14A219-C829-4837-B6AC-4A1A34C10BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F14A219-C829-4837-B6AC-4A1A34C10BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F14A219-C829-4837-B6AC-4A1A34C10BD2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4796BFE6-43B6-46C5-8148-EC414F5632A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4796BFE6-43B6-46C5-8148-EC414F5632A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4796BFE6-43B6-46C5-8148-EC414F5632A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4796BFE6-43B6-46C5-8148-EC414F5632A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA824F5-33EF-4D15-A63E-6278DD298BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA824F5-33EF-4D15-A63E-6278DD298BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA824F5-33EF-4D15-A63E-6278DD298BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA824F5-33EF-4D15-A63E-6278DD298BF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

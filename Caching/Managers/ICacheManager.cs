@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 
-namespace InMemoryCaching;
+namespace Caching.Managers;
 
-public interface IMemoryCacheManager : IDisposable
+public interface ICacheManager
 {
     public void Clear();
     public bool ContainsKey(string key);
