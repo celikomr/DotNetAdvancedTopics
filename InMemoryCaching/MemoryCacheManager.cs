@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
+using System.Collections;
+using System.Reflection;
 
 namespace InMemoryCaching;
 
@@ -33,7 +35,26 @@ public class MemoryCacheManager : IMemoryCacheManager
 
     public IEnumerable<T> GetAll<T>()
     {
-        throw new NotImplementedException();
+        List<T> cachedDataList = new();
+
+        ICollection cacheEntriesCollection = typeof(IMemoryCache)
+            .GetProperty("EntriesCollection", BindingFlags.NonPublic | BindingFlags.Instance)
+            .GetValue(_cache) as ICollection;
+
+        if (cacheEntriesCollection != null)
+        {
+            foreach (var cacheItem in cacheEntriesCollection)
+            {
+                var valueProperty = cacheItem.GetType().GetProperty("Value");
+
+                if (valueProperty.GetValue(cacheItem) is T value)
+                {
+                    cachedDataList.Add(value);
+                }
+            }
+        }
+
+        return cachedDataList;
     }
 
     public T GetOrSet<T>(string key, Func<T> getDataFunc, TimeSpan expirationTime, IEnumerable<string> dependencies = null, bool useLazyLoading = true)
